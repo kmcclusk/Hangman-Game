@@ -1,0 +1,74 @@
+body {
+	background-color: #fdee83 !important;
+}
+
+div.jumbotron {
+	background-color:#fdee83;
+	text-align:center;
+	font-family:Rubik Mono One;
+	font-size:200%;
+}
+p#winorlose {
+	font-family: Rubik Mono One;
+	font-size:300%;
+	color:white;
+	text-align:center;
+}
+p#word {
+	font-family: Rubik Mono One;
+	font-size:200%;
+	color:black;
+	text-align:center;
+}
+
+p#wincount {
+	font-family: Rubik Mono One;
+	font-size: 150%;
+	text-align:center;
+}
+
+p#wrong {
+	font-famiyly: Rubik Mono One;
+	font-size: 150%;
+	color:black;
+	text-align:center;
+}
+
+div#man {
+	padding-left:15%;
+}
+.head {
+	width:auto;
+	height:auto;
+	max-width:200px;
+}
+
+.arm {
+	width:auto;
+	height:auto;
+	max-height:350px;
+}
+
+.body {
+	width:auto;
+	height:auto;
+	max-width:300px;
+}
+
+.arm2 {
+	width:auto;
+	height:auto;
+	max-height:350px;
+}
+
+.leg {
+	width:auto;
+	height:auto;
+	max-height:350px;
+}
+
+.leg2 {
+	width:auto;
+	height:auto;
+	max-height:350px;
+}
