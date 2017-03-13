@@ -28,9 +28,7 @@ function startGame() {
 		
 		wordBlank[i] = "&nbsp;";
 		
-		}
-
-		else {
+		} else {
 
 			wordBlank[i] = "_";
 		}
@@ -42,6 +40,7 @@ function startGame() {
 	document.getElementById("wincount").innerHTML = "WINS" + " " + count;
 	document.getElementById("man").style.visibility = "hidden";
 }
+console.log(random);
 
 document.onkeyup = function(event) {
 
@@ -55,15 +54,24 @@ document.onkeyup = function(event) {
 
 				right++;
 
-			} if (right === random.length) {
-				document.getElementById("winorlose").innerHTML = "YAY!";
-				count = 1;
+			}
+		}
 
-			} if (random[i] !== userGuess) {
+		 //if (random[i] !== userGuess) {
+		 	if(random.indexOf(userGuess) === -1){
 
 				wrong++;
 		
-			}if (wrong === 1) {
+			}
+
+
+			if (right === random.length) {
+				document.getElementById("winorlose").innerHTML = "YAY!";
+				count = 1;
+
+			} 
+
+			if (wrong === 1) {
 			document.getElementById("head").style.visibility = "visible";
 				
 			} if (wrong === 2) {
@@ -82,7 +90,6 @@ document.onkeyup = function(event) {
 			document.getElementById("leg2").style.visiblity = "visible"; 
 			document.getElementById("winorlose").innerHTML = "YIKES";
 			}
-		}
 
 	document.getElementById("wincount").innerHTML = "WINS" + " " + count;	
 	document.getElementById("word").innerHTML = wordBlank.join(" ");
